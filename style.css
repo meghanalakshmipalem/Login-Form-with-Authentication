@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); 
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f7f7f888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login{
+    position: relative;
+    width: 380px;
+    height: 550px;
+    padding: 80px 50px 50px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1), -15px -15px 20px rgba(211, 205, 205, 0.507);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.login form{
+    position: absolute;
+    width: 100%;
+}
+
+.login form h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+    line-height: 0.9em;
+    text-align: center;
+    width: 100%;
+}
+
+.login form h2 span{
+    font-weight: 300;
+    font-size: 0.65em;
+}
+
+.login form .inputBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.login form .inputBox input {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  
+}
+
+.login form .inputBox input[type="text"],
+.login form .inputBox input[type="password"]{
+    width: 80%;
+    padding: 15px 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    color: #000000;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),inset -5px -5px 10px #fff;
+}
+
+.login form .inputBox i{
+    position: absolute;
+    left: 20px;
+    top: 25%;
+}
+
+.login form label{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.login form input[type="checkbox"]{
+    margin-right: 5px;
+
+}
+
+.login form .inputBox input[type="submit"]{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+     box-shadow: 5px 5px 10px rgba(0,0,0,0.1),-5px -5px 10px #fff;
+     width: 60%;
+     padding: 15px 20px;
+     cursor: pointer;
+     font-weight: 600;
+
+}
+
+.login form .inputBox input[type="submit"]:focus{
+
+    box-shadow: inset 5px 5px 10px rgba(14, 13, 13, 0.973), inset -5px -5px 10px #fff;
+}
+
+.login form h4{
+    text-align: center;
+    font-weight: 500;
+}
+.login form .fingerprint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+
+}
+
+.login .fingerprint .fingerprintBox{
+     box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #b3a3a3c7;
+     border: 3px solid #edf1f4;
+     padding: 15px 20px 10px;
+     border-radius: 10px;
+     background: linear-gradient(315deg, #03a9f4, #0082bc);
+}
+
+.login .fingerprint .fingerprintBox img{
+    max-width: 40px;
+    filter: invert(1);
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+}
+   
+.login .fingerprint p{
+    font-weight: 500;
+}
